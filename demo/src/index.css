@@ -1,0 +1,139 @@
+@font-face {
+	font-family: 'open_sanssemibold';
+	src: url('../assets/fonts/OpenSans-Semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #181411;
+
+	padding: 0;
+	margin: 0;
+	background: #efefef;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	color: #4e4e4e;
+	margin: 0.4em 0 2em;
+}
+
+pre {
+	display: inline-block;
+	border-radius: 2px;
+	padding: 1em 1.4em;
+	background: rgba(0, 0, 0, 0.1);
+	/* margin: 2em auto; */
+	min-width: 320px;
+}
+
+a {
+	color: #000;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 64px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	background: #333;
+}
+
+.note {
+	font-style: italic;
+	font-size: 13px;
+}
+
+.output {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 0 0 4px 4px;
+	color: #e8e8e8;
+	max-width: 520px;
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: left;
+	z-index: 2;
+}
+
+.output hr {
+	background: #414141;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.output pre {
+	width: 100%;
+	font-size: 1.3em;
+}
+
+.demo-container {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 960px;
+	text-align: center;
+	padding-top: 240px;
+	padding-bottom: 240px;
+}
+
+.demo-content {
+	position: relative;
+	overflow: hidden;
+	width: 520px;
+	height: 3000px;
+	margin: 0 auto;
+	padding-top: 120px;
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+
+	background: url(../assets/images/demo-image-0.jpg) no-repeat top left;
+	background-size: cover;
+	z-index: 1;
+}
+
+.demo-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background: url(../assets/images/demo-image-1.jpg) no-repeat top left;
+	background-size: cover;
+}
+
+.floating-image {
+	position: absolute;
+}
+
+.alerter {
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	opacity: 0;
+	transform: translateX(-50%) translateY(-50%) scale(0.2);
+	z-index: 10;
+	transition: all 0.5s cubic-bezier(0.255, 1.645, 0.180, 1.000);
+}
+
+.alerter.visible {
+	opacity: 1;
+	transform: translateX(-50%) translateY(-50%) scale(0.7);
+}
