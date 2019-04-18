@@ -1,6 +1,6 @@
 {
 	"name" : "@house-agency/scroll-dex",
-	"version" : "2.2.1",
+	"version" : "2.2.2",
 	"description" : "A React component used to provide it’s children with scroll position updates.",
 	"main" : "lib/index.js",
 	"module" : "es/index.js",
@@ -32,9 +32,9 @@
 		"prop-types" : "15.7.2"
 	},
 	"author" : "Daniel Termin <daniel@actionvillain.com>",
-	"homepage" : "",
+	"homepage" : "http://scrolldex.surge.sh",
 	"license" : "MIT",
-	"repository" : "",
+	"repository" : "https://github.com/botteu/scroll-dex",
 	"keywords" : [
 		"react-component",
 		"scrolling"
