@@ -44,7 +44,7 @@ class ScrollDex extends Component {
 	onScroll = () => {
 		if ( !this.willUnmount ) {
 
-			const y = this.element === window ? this.element.scrollY : this.element.scrollTop;
+			const y = this.element === window ? this.element.pageYOffset : this.element.scrollTop;
 			const height = this.element === window ? ( document.body.scrollHeight - this.element.innerHeight ) : this.element.outerHeight;
 			const relative = y / height;
 

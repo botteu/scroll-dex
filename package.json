@@ -1,6 +1,6 @@
 {
 	"name": "@house-agency/scroll-dex",
-	"version": "2.2.2",
+	"version": "2.2.3",
 	"description": "A React component used to provide it’s children with scroll position updates.",
 	"main": "lib/index.js",
 	"module": "es/index.js",
